@@ -629,7 +629,7 @@ class UsersController extends Controller
         // This is also present in PublicController::userSetup
         $validator = Validator::make($request->all(), [
             'password_current' => 'required|string',
-            'password'         => 'required|string|min:8|confirmed',
+            'password'         => 'required|string|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{10,}$/|confirmed',
         ]);
 
         $validator->after(function ($validator) use ($user, $request) {
