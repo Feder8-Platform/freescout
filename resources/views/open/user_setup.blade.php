@@ -111,7 +111,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group{{ $errors->has('photo_url') ? ' has-error' : '' }}">
+                            <!-- <div class="form-group{{ $errors->has('photo_url') ? ' has-error' : '' }}">
                                 <label for="photo_url" class="col-sm-4 control-label">{{ __('Photo') }}</label>
 
                                 <div class="col-sm-7">
@@ -126,7 +126,7 @@
                                         <p class="block-help">{{ __('Only visible in :app_name.', ['app_name' => \Config::get('app.name')]) }} {{ __('Image will be re-sized to 200x200. JPG, GIF, PNG accepted.') }}</p>
                                     </div>
                                     @include('partials/field_error', ['field'=>'photo_url'])
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="form-group">

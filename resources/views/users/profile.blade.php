@@ -185,7 +185,7 @@
                         </div>
                     </div>
 
-                    @action('user.edit.before_photo', $user)
+                    <!-- @action('user.edit.before_photo', $user)
 
                     <div class="form-group{{ $errors->has('photo_url') ? ' has-error' : '' }}">
                         <label for="photo_url" class="col-sm-2 control-label">{{ __('Photo') }}</label>
@@ -204,7 +204,7 @@
                             </div>
                             @include('partials/field_error', ['field'=>'photo_url'])
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <div class="col-md-6 col-sm-offset-2">
